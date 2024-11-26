@@ -9,7 +9,7 @@ const SignUp = () => {
       <div className="flex-1 bg-cover bg-center">
         <div className="flex justify-center items-center h-full bg-dark bg-opacity-60">
           <div className="text-white text-center">
-            <h1 className="text-8xl bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text">Disquiz</h1>
+            <h1 className="text-8xl bg-gradient-to-r from-blue-500 to-blue-800 text-transparent bg-clip-text">Disquiz</h1>
           
           </div>
         </div>
@@ -29,7 +29,7 @@ const SignUp = () => {
 
           <div className="mt-8 text-center">
             <p className="text-sm text-gray-400">Already have an account?  
-              <Link to="/login" className="ml-2 font-semibold text-orange-500 hover:underline">
+              <Link to="/login" className="ml-2 font-semibold text-blue-500 hover:underline">
                 Login
               </Link>
             </p>

@@ -1,4 +1,4 @@
-import flashCardsImage from '../assets/flashCards.png';
+import flashCardsImage from "../../assets/flashCards.png";
 
 const AboutUs = () => {
     return (
@@ -15,7 +15,7 @@ const AboutUs = () => {
               With an intuitive interface and engaging quiz formats, DisQuiz helps users improve their knowledge while tracking 
               their progress. Our goal is to make learning both fun and effective for everyone!
             </p>
-            <button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-2 px-6 rounded-full mt-4">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full mt-4">
               Learn more
             </button>
           </div>

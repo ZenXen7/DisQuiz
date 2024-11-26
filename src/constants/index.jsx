@@ -18,6 +18,11 @@ export const navItems = [
   { label: "Contact Us", href: "#contact-us" },
 ];
 
+export const HomeNavItems = [
+  { label: "About Us", href: "#" },
+  { label: "Contact Us", href: "#" },
+]
+
 export const testimonials = [
   {
     user: "John Doe",

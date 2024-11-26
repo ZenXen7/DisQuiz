@@ -13,7 +13,7 @@ const Login = () => {
         <div className="mt-8 text-center">
           <p className="text-sm text-gray-500">Dont have an account?  
             {/* Use Link for navigation to the SignUp page */}
-            <Link to="/signup" className="ml-2 font-semibold text-orange-500 hover:underline">
+            <Link to="/signup" className="ml-2 font-semibold text-blue-500 hover:underline">
               Sign up
             </Link>
           </p>

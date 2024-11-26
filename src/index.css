@@ -8,3 +8,38 @@
   font-family: "Poppins", sans-serif;
   color-scheme: dark;
 }
+
+/* Custom Scrollbar */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #4a90e2; /* Blue color for the thumb */
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background-color: #357ab7; /* Darker blue when hovered */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:active {
+  background-color: #2c6687; /* Even darker when clicked */
+}
+
+/* Firefox scrollbar customization */
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: #4a90e2 rgba(0, 0, 0, 0.1);
+}
+
+.scrollbar-custom:hover {
+  scrollbar-color: #357ab7 rgba(0, 0, 0, 0.1);
+}

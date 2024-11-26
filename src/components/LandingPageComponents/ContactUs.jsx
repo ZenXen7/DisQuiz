@@ -1,4 +1,4 @@
-import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa"; // Importing social media icons
+import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa"; 
 
 const ContactUs = () => {
     return (

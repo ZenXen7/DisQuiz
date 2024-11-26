@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Card from "./components/Cards";
+import Hero from "./components/LandingPageComponents/Hero";
+import Card from "./components/LandingPageComponents/Cards";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
-import AboutUs from "./components/AboutUs";
-import ContactUs from "./components/ContactUs";
+import AboutUs from "./components/LandingPageComponents/AboutUs";
+import HomePage from "./pages/HomePage";
+import ContactUs from "./components/LandingPageComponents/ContactUs";
 import flashCards from "./assets/flashCards.png";
 import studyGuides from "./assets/studyGuides.png";
 import practiceTests from "./assets/practiceTests.png";
@@ -70,6 +71,10 @@ const App = () => {
      
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/homepage" element={<HomePage />} />
+       
+
+
       </Routes>
     </Router>
   );

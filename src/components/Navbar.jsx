@@ -26,10 +26,10 @@ const Navbar = () => {
             {navItems.map((item, index) => (
               <li key={index}>
               <ScrollLink
-                to={item.href.substring(1)} // Extract the section name from the href
+                to={item.href.substring(1)} 
                 smooth={true}
                 duration={500}
-                className="cursor-pointer hover:text-orange-500"
+                className="cursor-pointer hover:text-blue-500"
                 >
                 {item.label}
                 </ScrollLink>
@@ -40,7 +40,7 @@ const Navbar = () => {
           <div className="hidden lg:flex justify-center space-x-12 items-center">
             <Link
               to="/login"
-              className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
+              className="bg-gradient-to-r from-blue-500 to-blue-800 py-2 px-3 rounded-md"
             >
               Login
             </Link>
