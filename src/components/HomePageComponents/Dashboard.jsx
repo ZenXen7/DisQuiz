@@ -1,9 +1,10 @@
-import PropTypes from 'prop-types'; // Import PropTypes
-import { FaCheckCircle, FaBell, FaTrophy, FaStar } from 'react-icons/fa'; // Importing FontAwesome icons from react-icons
-import flashCardsImage from "../assets/flashCards.png"; // Import your card image
+/* eslint-disable no-unused-vars */
+import PropTypes from 'prop-types'; 
+import { FaCheckCircle, FaBell, FaTrophy, FaStar } from 'react-icons/fa'; 
+import flashCardsImage from "../../assets/flashCards.png"; 
 
-import Math from "../assets/math.jpg"; 
-import Math2 from "../assets/math2.jpg"; 
+import Math from "../../assets/math.jpg"; 
+import Math2 from "../../assets/math2.jpg"; 
 
 const Cards = ({ title, image, bgColor, type,  onClick }) => {
   return (
@@ -28,6 +29,7 @@ Cards.propTypes = {
   title: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   bgColor: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
 };
 
@@ -39,13 +41,12 @@ const Dashboard = () => {
   return (
     <div className="p-6">
       <div className="flex flex-col lg:flex-row justify-between">
-        {/* Left section: Explore and Cards */}
         <div className="w-full lg:w-3/5 mb-6 lg:mb-0 mr-10">
           <div className="sticky top-0 z-10 pb-2">
             <h2 className="text-4xl font-semibold mb-4">Explore</h2>
           </div>
 
-          {/* Cards Wrapper with Scroll */}
+       
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-h-[80vh] overflow-y-auto scrollbar-custom border-4 border-blue-500 rounded-xl p-2">
             <Cards
               title="Algebra Quiz"
@@ -59,17 +60,44 @@ const Dashboard = () => {
               image="https://via.placeholder.com/150"
               bgColor="bg-green-600"
               onClick={handleCardClick}
-              type="Multiple Choice"
+              type="True or False"
+            />
+             <Cards
+              title="Explore Quiz 2"
+              image="https://via.placeholder.com/150"
+              bgColor="bg-red-600"
+              onClick={handleCardClick}
+              type="True or False"
+            />
+             <Cards
+              title="Explore Quiz 2"
+              image="https://via.placeholder.com/150"
+              bgColor="bg-indigo-600"
+              onClick={handleCardClick}
+              type="True or False"
+            />
+             <Cards
+              title="Explore Quiz 2"
+              image="https://via.placeholder.com/150"
+              bgColor="bg-gray-600"
+              onClick={handleCardClick}
+              type="True or False"
+            />
+             <Cards
+              title="Explore Quiz 2"
+              image="https://via.placeholder.com/150"
+              bgColor="bg-pink-600"
+              onClick={handleCardClick}
+              type="True or False"
             />
           
-          
-            {/* You can add more cards here */}
+        
           </div>
         </div>
 
-        {/* Right section: Reminders and Achievements */}
+     
         <div className="w-full lg:w-2/5 flex flex-col space-y-6">
-          {/* Reminders Section */}
+      
           <div className="bg-red-600 p-6 shadow-lg rounded-lg">
             <h2 className="text-xl font-semibold mb-4 text-white flex items-center space-x-2">
               <FaBell className="text-yellow-500" /> <span>Reminders</span>
@@ -92,7 +120,7 @@ const Dashboard = () => {
             </ul>
           </div>
 
-          {/* Achievements Section */}
+       
           <div className="bg-zinc-200 p-6 shadow-lg rounded-lg">
             <h2 className="text-xl font-semibold mb-4 text-black flex items-center space-x-2">
               <FaTrophy className="text-yellow-500" /> <span>Achievements</span>

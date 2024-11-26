@@ -4,7 +4,7 @@ const Form = () => {
   const navigate = useNavigate();
 
   const handleSignIn = () => {
-    // Navigate to the HomePage and set the default view to Dashboard
+
     navigate("/homepage", { state: { selectedTab: "dashboard" } });
   };
 

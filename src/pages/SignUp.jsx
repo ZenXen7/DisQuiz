@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom'; // Import Link for navigation
-import FormSignUp from "../components/FormSignUp"; // Correct path to FormSignUp component
+import { Link } from 'react-router-dom'; 
+import FormSignUp from "../components/FormSignUp"; 
 
 const SignUp = () => {
   return (
     <div className="min-h-screen flex">
-      
-      {/* Left side image background */}
+    
       <div className="flex-1 bg-cover bg-center">
         <div className="flex justify-center items-center h-full bg-dark bg-opacity-60">
           <div className="text-white text-center">
@@ -21,10 +20,10 @@ const SignUp = () => {
           <h2 className="text-3xl font-semibold text-black mb-6">Register</h2>
         
 
-          {/* Form Component */}
+         
           <FormSignUp />
 
-          {/* Account Type Dropdown */}
+       
          
 
           <div className="mt-8 text-center">

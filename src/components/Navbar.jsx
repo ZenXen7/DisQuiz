@@ -1,11 +1,10 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react"; 
-import { Link as ScrollLink } from "react-scroll"; // Rename react-scroll Link import
+import { Link as ScrollLink } from "react-scroll"; 
 
 import { navItems } from "../constants";
 import logo from "../assets/logo.png";
-import { Link } from "react-router-dom";  // Use react-router-dom Link for navigation
-
+import { Link } from "react-router-dom";  
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);

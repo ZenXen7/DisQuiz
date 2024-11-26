@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import Form from "../components/Form"; // Import the Form component
+import { Link } from 'react-router-dom';
+import Form from "../components/Form"; 
 
 const Login = () => {
   return (
@@ -12,7 +12,7 @@ const Login = () => {
 
         <div className="mt-8 text-center">
           <p className="text-sm text-gray-500">Dont have an account?  
-            {/* Use Link for navigation to the SignUp page */}
+           
             <Link to="/signup" className="ml-2 font-semibold text-blue-500 hover:underline">
               Sign up
             </Link>
