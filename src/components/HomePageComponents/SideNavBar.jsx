@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { FaHome, FaPen, FaBell, FaTrophy, FaHistory } from 'react-icons/fa';
+import { FaHome, FaPen, FaBell, FaTrophy, FaHistory, FaUser } from 'react-icons/fa';
 
 const SideNavBar = ({ activeTab, onTabChange }) => {
     const isSelected = (tab) => (activeTab === tab ? 'bg-white text-blue-600' : 'hover:bg-white hover:text-blue-600');
@@ -43,11 +44,11 @@ const SideNavBar = ({ activeTab, onTabChange }) => {
   
           <li>
             <button 
-              onClick={() => onTabChange("achievements")}
-              className={`flex items-center space-x-4 px-4 py-3 rounded-lg transition-all duration-200 ease-in-out ${isSelected("achievements")}`}
+              onClick={() => onTabChange("profile")}
+              className={`flex items-center space-x-4 px-4 py-3 rounded-lg transition-all duration-200 ease-in-out ${isSelected("profile")}`}
             >
-              <FaTrophy className="text-xl" />
-              <span className="text-lg font-medium">Achievements</span>
+              <FaUser className="text-xl" />
+              <span className="text-lg font-medium">Profile</span>
             </button>
           </li>
   

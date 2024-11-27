@@ -2,6 +2,7 @@
 import PropTypes from 'prop-types'; 
 import { FaCheckCircle, FaBell, FaTrophy, FaStar } from 'react-icons/fa'; 
 import flashCardsImage from "../../assets/flashCards.png"; 
+import dash from "../../assets/dashImage.png"; 
 
 import Math from "../../assets/math.jpg"; 
 import Math2 from "../../assets/math2.jpg"; 
@@ -47,7 +48,7 @@ const Dashboard = () => {
           </div>
 
        
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-h-[80vh] overflow-y-auto scrollbar-custom border-4 border-blue-500 rounded-xl p-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-h-[80vh] overflow-y-auto scrollbar-custom  0 rounded-xl p-2">
             <Cards
               title="Algebra Quiz"
               image={Math2}
@@ -84,6 +85,34 @@ const Dashboard = () => {
               type="True or False"
             />
              <Cards
+              title="Explore Quiz 2"
+              image="https://via.placeholder.com/150"
+              bgColor="bg-pink-600"
+              onClick={handleCardClick}
+              type="True or False"
+            />
+              <Cards
+              title="Explore Quiz 2"
+              image="https://via.placeholder.com/150"
+              bgColor="bg-pink-600"
+              onClick={handleCardClick}
+              type="True or False"
+            />
+              <Cards
+              title="Explore Quiz 2"
+              image="https://via.placeholder.com/150"
+              bgColor="bg-pink-600"
+              onClick={handleCardClick}
+              type="True or False"
+            />
+              <Cards
+              title="Explore Quiz 2"
+              image="https://via.placeholder.com/150"
+              bgColor="bg-pink-600"
+              onClick={handleCardClick}
+              type="True or False"
+            />
+              <Cards
               title="Explore Quiz 2"
               image="https://via.placeholder.com/150"
               bgColor="bg-pink-600"
@@ -135,9 +164,16 @@ const Dashboard = () => {
                 <span className="font-semibold">Scored 100% on the test.</span>
               </li>
             </ul>
+            
           </div>
+          <div>
+         
         </div>
+        </div>
+
+       
       </div>
+      
     </div>
   );
 };
