@@ -91,8 +91,7 @@ const Create = () => {
                   required
                 >
                   <option value="">Select quiz type</option>
-                  <option value="flashcards">Flashcards</option>
-                  <option value="multiple-choice">Multiple Choice</option>
+           
                   <option value="true-false">True/False</option>
                 </select>
               </div>

@@ -1,9 +1,23 @@
 import { FaClipboardCheck, FaGift, FaCheckCircle, FaPen } from "react-icons/fa";
 import learn from "../../assets/learn.png";
+import { useState } from "react";
+import ProfilePageEdit from "../ProfileComponents/ProfilePageEdit";
 
 const Profile = () => {
+  const [isEditing, setIsEditing] = useState(false);
+
+  const handleEditClick = () => {
+    setIsEditing(true);
+  };
+
+  if (isEditing) {
+    return <ProfilePageEdit />;
+  }
+
+
+
   return (
-    <div className="bg-dark text-white p-6 rounded-lg shadow-md max-w-7xl mx-auto">
+    <div className="bg-gray-800 text-white p-6 rounded-2xl shadow-md max-w-7xl mx-auto">
       <div className="flex flex-col lg:flex-row gap-8">
      
         <div className="flex-1">
@@ -16,7 +30,10 @@ const Profile = () => {
             />
             <div>
               <h1 className="text-3xl font-bold flex">Michael Clifford
-              <FaPen className="text-blue-500 text-2xl ml-8 mt-1" />
+               <FaPen
+                  className="text-blue-500 text-2xl ml-8 mt-1 cursor-pointer"
+                  onClick={handleEditClick}
+                />
               </h1>
               
               <p className="text-gray-400 text-sm">Level 1</p>
@@ -101,7 +118,7 @@ const Profile = () => {
             ].map((reminder, idx) => (
               <li
                 key={idx}
-                className="flex justify-between items-center bg-gray-800 p-4 rounded-lg border border-gray-700 shadow-md"
+                className="flex justify-between items-center bg-red-600 p-4 rounded-lg border border-gray-700 shadow-md"
               >
                 <span>{reminder.title}</span>
                 <span className="text-gray-400 text-sm">{reminder.due}</span>
