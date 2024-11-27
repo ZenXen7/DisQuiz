@@ -1,4 +1,4 @@
-import { FaClipboardCheck, FaGift, FaCheckCircle } from "react-icons/fa";
+import { FaClipboardCheck, FaGift, FaCheckCircle, FaPen } from "react-icons/fa";
 import learn from "../../assets/learn.png";
 
 const Profile = () => {
@@ -15,7 +15,10 @@ const Profile = () => {
               className="w-32 h-32 rounded-full border-4 border-gray-700 object-cover"
             />
             <div>
-              <h1 className="text-3xl font-bold">Michael Clifford</h1>
+              <h1 className="text-3xl font-bold flex">Michael Clifford
+              <FaPen className="text-blue-500 text-2xl ml-8 mt-1" />
+              </h1>
+              
               <p className="text-gray-400 text-sm">Level 1</p>
             </div>
           </div>
