@@ -10,6 +10,7 @@ import ContactUs from "./components/LandingPageComponents/ContactUs";
 import flashCards from "./assets/flashCards.png";
 import studyGuides from "./assets/studyGuides.png";
 import practiceTests from "./assets/practiceTests.png";
+import TFQuiz from "./components/QuizComponents/TFQuiz";
 import learn from "./assets/learn.png";
 
 const App = () => {
@@ -73,7 +74,7 @@ const App = () => {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/homepage" element={<HomePage />} />
        
-
+        <Route path="/tf-quiz" element={<TFQuiz />} />
 
       </Routes>
     </Router>

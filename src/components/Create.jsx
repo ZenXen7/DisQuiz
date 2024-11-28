@@ -70,7 +70,7 @@ const Create = () => {
                   value={quizTitle}
                   onChange={(e) => setQuizTitle(e.target.value)}
                   placeholder="Enter quiz title"
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full p-3 border border-gray-300 bg-black rounded-lg focus:ring-blue-500 focus:border-blue-500"
                   required
                 />
               </div>

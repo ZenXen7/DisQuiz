@@ -4,7 +4,7 @@ import userImage from '../../assets/profile-pictures/user1.jpg';
 const ProfilePageEdit = () => {
   return (
     <div className="bg-gray-800 text-white w-full h-full p-8 rounded-lg shadow-lg">
-      {/* Profile Banner Section */}
+ 
       <div
         className="relative bg-gray-900 rounded-lg mb-10 p-8"
         style={{
@@ -13,9 +13,8 @@ const ProfilePageEdit = () => {
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
 
-        {/* Change Banner Button */}
         <button className="absolute top-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-md flex items-center space-x-2 hover:bg-blue-700">
-          <FaPen /> {/* Edit Icon */}
+          <FaPen /> 
           <span>Change Banner</span>
         </button>
 
@@ -61,7 +60,7 @@ const ProfilePageEdit = () => {
           </div>
         </div>
 
-        {/* Contact Email */}
+     
         <div>
           <h3 className="text-lg font-semibold mb-3 flex items-center">
             <FaEnvelope className="mr-2" /> Contact Email
@@ -79,7 +78,7 @@ const ProfilePageEdit = () => {
           </div>
         </div>
 
-        {/* Password */}
+    
         <div>
           <h3 className="text-lg font-semibold mb-3 flex items-center">
             <FaKey className="mr-2" /> Password
@@ -97,7 +96,7 @@ const ProfilePageEdit = () => {
           </div>
         </div>
 
-        {/* Address */}
+    
         <div>
           <h3 className="text-lg font-semibold mb-3 flex items-center">
             <FaMapMarkerAlt className="mr-2" /> Address
@@ -130,7 +129,6 @@ const ProfilePageEdit = () => {
           </div>
         </div>
 
-        {/* Age */}
         <div>
           <h3 className="text-lg font-semibold mb-3 flex items-center">
             <FaCalendarAlt className="mr-2" /> Age
@@ -146,7 +144,6 @@ const ProfilePageEdit = () => {
         </div>
       </div>
 
-      {/* Footer Section */}
       <div className="flex justify-between items-center mt-12 border-t border-gray-700 pt-6">
         <p className="text-gray-400 text-sm">
           Ensure all information is accurate before saving.
