@@ -17,7 +17,7 @@ const Profile = () => {
 
 
   return (
-    <div className="bg-gray-800 text-white p-6 rounded-2xl shadow-md max-w-7xl mx-auto">
+    <div className="bg-gray-800 text-white p-6 rounded-2xl shadow-md max-w-7xl mx-auto mt-16">
       <div className="flex flex-col lg:flex-row gap-8">
      
         <div className="flex-1">
